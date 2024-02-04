@@ -1,4 +1,4 @@
-export function NavBar() {
+export function NavBar({ data }: any) {
   return (
     <>
       <nav className="navbar bg-primary" data-bs-theme="dark">
@@ -10,7 +10,7 @@ export function NavBar() {
         </form>
         <div className="rounded-circle bg-light text-dark p-3 me-2">CA</div>
         <p className="mb-0 ms-1 p-3 text-white">
-          <b> Clinton Archison</b>
+          <b> {data.students[0].full_name}</b>
         </p>
       </nav>
     </>

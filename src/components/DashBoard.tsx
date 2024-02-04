@@ -15,7 +15,7 @@ const DashBoard: React.FC = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar data={studentDetails}/><br />
       <div className={styles.gridContainer}>
         <SideNav currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <div>
