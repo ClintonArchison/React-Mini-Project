@@ -16,7 +16,7 @@ const DashBoard: React.FC = () => {
 
   return (
     <>
-      <NavBar data={studentDetails}/><br />
+      <NavBar data={studentDetails} /><br />
       <div className={styles.gridContainer}>
         <SideNav currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <div>
@@ -26,10 +26,10 @@ const DashBoard: React.FC = () => {
                 return <StudentInfo data={studentDetails} />;
               case 2:
                 return <StudentAttendance data={studentDetails} />;
-                case 3:
-                  return <Marks data={studentDetails}/>;
-                  case 4:
-                    return <DisplinaryAction data={studentDetails}/>
+              case 3:
+                return <Marks data={studentDetails} />;
+              case 4:
+                return <DisplinaryAction data={studentDetails} />
               default:
                 return <StudentInfo data={studentDetails} />;
             }

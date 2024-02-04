@@ -10,7 +10,7 @@ export function Marks({ data }: any) {
           </tr>
         </thead>
         <tbody>
-        <tr>
+          <tr>
             <td>Tamil</td>
             <td align="center">{data.students[0].marks[0]}</td>
           </tr>
