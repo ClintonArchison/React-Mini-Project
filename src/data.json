@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "username": "student01",
+      "password": "pass01",
+      "full_name": "Alice Johnson",
+      "phone_number": "123-456-7890",
+      "father_name": "John Johnson",
+      "mother_name": "Jane Johnson",
+      "city": "City A",
+      "state": "State A",
+      "pin": "123456",
+      "birth_marks": "None",
+      "grade": "4th Grade",
+      "sports": ["Basketball"],
+      "academic_year": "2023-2024",
+      "marks": { "Mathematics": 85, "Science": 82, "English": 78 },
+      "attendance": 92,
+      "disciplinary_actions": null
+    },
+    {
+      "username": "student02",
+      "password": "pass02",
+      "full_name": "Bob Smith",
+      "phone_number": "234-567-8901",
+      "father_name": "Mike Smith",
+      "mother_name": "Sara Smith",
+      "city": "City B",
+      "state": "State B",
+      "pin": "234567",
+      "birth_marks": "Mole on neck",
+      "grade": "5th Grade",
+      "sports": ["Soccer"],
+      "academic_year": "2023-2024",
+      "marks": { "Mathematics": 75, "Science": 88, "English": 82 },
+      "attendance": 95,
+      "disciplinary_actions": "Late submission"
+    },
+    {
+      "username": "student03",
+      "password": "pass03",
+      "full_name": "Charlie Davis",
+      "phone_number": "345-678-9012",
+      "father_name": "Howard Davis",
+      "mother_name": "Emma Davis",
+      "city": "City C",
+      "state": "State C",
+      "pin": "345678",
+      "birth_marks": "Scar on forearm",
+      "grade": "4th Grade",
+      "sports": ["Tennis"],
+      "academic_year": "2023-2024",
+      "marks": { "Mathematics": 90, "Science": 91, "English": 89 },
+      "attendance": 88,
+      "disciplinary_actions": null
+    }
+  ]
+}
