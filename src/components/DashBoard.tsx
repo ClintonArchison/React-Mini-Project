@@ -4,8 +4,9 @@ import { SideNav } from "./SideNav";
 import styles from "./DashBoard.module.css";
 import { StudentInfo } from "./StudentInfo";
 import { StudentAttendance } from "./StudentAttendance";
-
+import { DisplinaryAction } from "./DisplinaryAction";
 import studentDetails from "../data.json";
+import { Marks } from "./Marks";
 const DashBoard: React.FC = () => {
   const [currentTab, setCurrentTab] = useState(1) as any;
 
@@ -25,6 +26,10 @@ const DashBoard: React.FC = () => {
                 return <StudentInfo data={studentDetails} />;
               case 2:
                 return <StudentAttendance data={studentDetails} />;
+                case 3:
+                  return <Marks data={studentDetails}/>;
+                  case 4:
+                    return <DisplinaryAction data={studentDetails}/>
               default:
                 return <StudentInfo data={studentDetails} />;
             }

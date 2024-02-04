@@ -8,10 +8,10 @@ export function NavBar({ data }: any) {
             Log Out
           </button>
         </form>
-        <div className="rounded-circle bg-light text-dark p-3 me-2">CA</div>
-        <p className="mb-0 ms-1 p-3 text-white">
+        <div className="rounded-circle bg-light text-dark p-3 me-1"><b>{data.students[0].short_name}</b></div>
+        <div><p className="mb-0 ms-1 p-3 text-white">
           <b> {data.students[0].full_name}</b>
-        </p>
+        </p></div>
       </nav>
     </>
   );

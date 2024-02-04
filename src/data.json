@@ -3,6 +3,7 @@
     {
       "username": "student01",
       "password": "pass01",
+      "short_name":"AJ",
       "full_name": "Alice Johnson",
       "phone_number": "123-456-7890",
       "father_name": "John Johnson",
@@ -14,9 +15,13 @@
       "grade": "4th Grade",
       "sports": ["Basketball"],
       "academic_year": "2023-2024",
-      "marks": { "Mathematics": 85, "Science": 82, "English": 78 },
-      "attendance": 92,
-      "disciplinary_actions": null
+      "marks": [94, 85, 82, 78 , 87],
+      "attendance":[92, 99, 98, 100, 96, 100, 99, 97],
+      "overall_percentage":[97],
+      "total_marks":[426],
+      "disciplinary_actions": "Late submission",
+      "disciplinary_actions_date": "22-Jan-2024",
+      "punishment_given": "Excuse with Warning"
     },
     {
       "username": "student02",
@@ -32,7 +37,7 @@
       "grade": "5th Grade",
       "sports": ["Soccer"],
       "academic_year": "2023-2024",
-      "marks": { "Mathematics": 75, "Science": 88, "English": 82 },
+      "marks": { "Mathematics": 75, "Science": 88, "English": 82,"Environmental Studies": 65,"Social": 55 },
       "attendance": 95,
       "disciplinary_actions": "Late submission"
     },
@@ -50,9 +55,11 @@
       "grade": "4th Grade",
       "sports": ["Tennis"],
       "academic_year": "2023-2024",
-      "marks": { "Mathematics": 90, "Science": 91, "English": 89 },
+      "marks": { "Mathematics": 90, "Science": 91, "English": 89,"Environmental Studies": 62,"Social": 77 },
       "attendance": 88,
       "disciplinary_actions": null
     }
   ]
+  
 }
+
