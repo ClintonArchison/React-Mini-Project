@@ -16,22 +16,23 @@ const DashBoard: React.FC = () => {
 
   return (
     <>
-      <NavBar data={studentDetails} /><br />
+      <NavBar data={studentDetails} />
+      <br />
       <div className={styles.gridContainer}>
         <SideNav currentTab={currentTab} setCurrentTab={setCurrentTab} />
         <div>
           {(() => {
             switch (currentTab) {
               case 1:
-                return <StudentInfo data={studentDetails} />;
+                return <StudentInfo />;
               case 2:
                 return <StudentAttendance data={studentDetails} />;
               case 3:
                 return <Marks data={studentDetails} />;
               case 4:
-                return <DisplinaryAction data={studentDetails} />
+                return <DisplinaryAction data={studentDetails} />;
               default:
-                return <StudentInfo data={studentDetails} />;
+                return <StudentInfo />;
             }
           })()}
         </div>

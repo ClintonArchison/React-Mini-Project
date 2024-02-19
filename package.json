@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "appwrite": "^13.0.1",
     "bootstrap": "^5.2.3",
     "git": "^0.1.5",
     "react": "^18.2.0",

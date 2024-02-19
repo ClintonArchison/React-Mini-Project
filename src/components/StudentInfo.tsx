@@ -1,9 +1,13 @@
 export function StudentInfo({ data }: any) {
   return (
     <div className="container">
-      <table width='100%' className="table">
+      <table width="100%" className="table">
         <thead>
-          <tr><td colSpan={2} align='center' className="table-primary" ><b>STUDENT INFORMATION</b></td></tr>
+          <tr>
+            <td colSpan={2} align="center" className="table-primary">
+              <b>STUDENT INFORMATION</b>
+            </td>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -39,7 +43,7 @@ export function StudentInfo({ data }: any) {
             <td>{data.students[0].state}</td>
           </tr>
           <tr>
-            <td>PinCode</td>
+            <td>Pin Code</td>
             <td>{data.students[0].pin}</td>
           </tr>
         </tbody>
