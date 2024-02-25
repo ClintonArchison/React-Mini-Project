@@ -1,58 +1,47 @@
+import { NavLink } from "react-router-dom";
 import styles from "./SideNav.module.css";
 
-export function SideNav({
-  currentTab,
-  setCurrentTab,
-}: {
-  currentTab: number;
-  setCurrentTab: (currentTab: number) => void;
-}) {
+export function SideNav() {
   return (
     <>
       <ul className="list-group list-group-flush d-flex flex-column ">
-        <li
-          className={
-            currentTab === 1
-              ? `list-group-item active ${styles.listStyleNone} `
-              : `list-group-item ${styles.listStyleNone}`
-          }
-          onClick={() => setCurrentTab(1)}
-        >
-          Student Info
+        <li className="list-group-item">
+          <NavLink
+            to="/dashboard/student-info"
+            className="text-decoration-none"
+          >
+            Student Info
+          </NavLink>
         </li>
-        <li
-          className={
-            currentTab === 2
-              ? `list-group-item active ${styles.listStyleNone}`
-              : `list-group-item ${styles.listStyleNone}`
-          }
-          onClick={() => {
-            setCurrentTab(2);
-          }}
-        >
-          Student Attendance
+        <li className="list-group-item">
+          <NavLink
+            to="/dashboard/student-attendance"
+            className="text-decoration-none"
+          >
+            Student Attendance
+          </NavLink>
         </li>
-        <li
-          className={
-            currentTab === 3
-              ? `list-group-item active ${styles.listStyleNone}`
-              : `list-group-item ${styles.listStyleNone}`
-          }
-          onClick={() => setCurrentTab(3)}
-        >
-          Marks
+        <li className="list-group-item">
+          <NavLink to="/dashboard/marks" className="text-decoration-none">
+            Marks
+          </NavLink>
         </li>
-        <li
-          className={
-            currentTab === 4
-              ? `list-group-item active ${styles.listStyleNone}`
-              : `list-group-item ${styles.listStyleNone}`
-          }
-          onClick={() => setCurrentTab(4)}
-        >
-          Displinary Action
+        <li className="list-group-item">
+          <NavLink
+            to="/dashboard/disciplinary-action"
+            className="text-decoration-none"
+          >
+            Displinary Action
+          </NavLink>
         </li>
       </ul>
     </>
   );
 }
+
+// className={
+//             currentTab === 1
+//               ? `list-group-item active ${styles.listStyleNone} `
+//               : `list-group-item ${styles.listStyleNone}`
+//           }
+//           onClick={() => setCurrentTab(1)}
