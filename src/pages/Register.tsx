@@ -40,7 +40,7 @@ export function Register() {
         username: formData.username,
         email: formData.email,
         password: formData.password,
-        role: "admin",
+        role: "STUDENT",
       }),
     })
       .then((response) => response.json())
@@ -112,6 +112,10 @@ export function Register() {
             Submit
           </button>
         </div>
+
+        <p className="text-center">
+          Already have an account? <a href="/">Login here</a>
+        </p>
       </form>
     </div>
   );

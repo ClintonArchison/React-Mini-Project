@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-export function Login() {
+export function Login({ loginMethod }: any) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState<LoginFormData>({
     email: "",
@@ -26,14 +26,15 @@ export function Login() {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
+          loginMethod(data.username, data.role);
+
           navigate("/dashboard/student-info");
         }
+      })
+      .catch((e) => {
+        alert("Login was unsuccessful!!!\n" + e);
       });
   };
-
-  // useEffect(() => {
-  //   console.log(formData);
-  // }, [formData]);
 
   return (
     <div className="container">
@@ -68,6 +69,10 @@ export function Login() {
         <div className="mb-2 d-flex justify-content-center">
           <button className="btn btn-primary">Submit</button>
         </div>
+
+        <p className="text-center">
+          Don't have an account? <a href="/register">Signup here</a>
+        </p>
       </form>
     </div>
   );

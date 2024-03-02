@@ -5,13 +5,13 @@ import data from "../data.json";
 import { DashboardLayout } from "../layouts/DashboardLayout";
 import { DisplinaryAction } from "../components/DisplinaryAction";
 import { StudentAttendance } from "../components/StudentAttendance";
-export function DashboardRoute() {
+export function DashboardRoute({ username, role }: any) {
   return (
     <Routes>
       <Route
         path="/student-info"
         element={
-          <DashboardLayout>
+          <DashboardLayout username={username}>
             <StudentInfo data={data} />
           </DashboardLayout>
         }
@@ -19,7 +19,7 @@ export function DashboardRoute() {
       <Route
         path="/marks"
         element={
-          <DashboardLayout>
+          <DashboardLayout username={username}>
             <Marks data={data} />
           </DashboardLayout>
         }
@@ -27,8 +27,16 @@ export function DashboardRoute() {
       <Route
         path="/student-attendance"
         element={
-          <DashboardLayout>
+          <DashboardLayout username={username}>
             <StudentAttendance data={data} />
+          </DashboardLayout>
+        }
+      />
+      <Route
+        path="/disciplinary-action"
+        element={
+          <DashboardLayout username={username}>
+            <DisplinaryAction data={data} role={role} />
           </DashboardLayout>
         }
       />
