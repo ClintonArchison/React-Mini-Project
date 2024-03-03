@@ -1,5 +1,3 @@
-import { Link, redirect } from "react-router-dom";
-
 export function NavBar({ data, username }: any) {
   return (
     <>

@@ -1,11 +1,9 @@
-// import DashBoard from "./components/DashBoard";
 import { Login } from "./pages/Login";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { DashboardRoute } from "./routes/DashboardRoute";
 import { Register } from "./pages/Register";
 import { useState } from "react";
-import Unauthorized from "./pages/Unauthorized";
 import "./App.css"
 function App() {
   const [userName, setUserName] = useState("");
@@ -21,10 +19,6 @@ function App() {
     {
       path: "/dashboard/*",
       element: <DashboardRoute username={userName} role={role} />,
-    },
-    {
-      path: "/unauthorized",
-      element: <Unauthorized />,
     },
   ]);
   return <RouterProvider router={route} />;

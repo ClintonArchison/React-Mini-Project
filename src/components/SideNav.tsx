@@ -40,10 +40,3 @@ export function SideNav() {
     </>
   );
 }
-
-// className={
-//             currentTab === 1
-//               ? `list-group-item active ${styles.listStyleNone} `
-//               : `list-group-item ${styles.listStyleNone}`
-//           }
-//           onClick={() => setCurrentTab(1)}
