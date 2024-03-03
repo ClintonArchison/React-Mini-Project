@@ -6,11 +6,12 @@ import { DashboardRoute } from "./routes/DashboardRoute";
 import { Register } from "./pages/Register";
 import { useState } from "react";
 import Unauthorized from "./pages/Unauthorized";
+import "./App.css"
 function App() {
   const [userName, setUserName] = useState("");
   const [role, setRole] = useState("");
   const login = (username: any, role: any) => {
-    console.log(username, role);
+    // console.log(username, role);
     setUserName(username);
     setRole(role);
   };

@@ -22,42 +22,6 @@
       "disciplinary_actions": "Late submission",
       "disciplinary_actions_date": "22-Jan-2024",
       "punishment_given": "Excuse with Warning"
-    },
-    {
-      "username": "student02",
-      "password": "pass02",
-      "full_name": "Bob Smith",
-      "phone_number": "234-567-8901",
-      "father_name": "Mike Smith",
-      "mother_name": "Sara Smith",
-      "city": "City B",
-      "state": "State B",
-      "pin": "234567",
-      "birth_marks": "Mole on neck",
-      "grade": "5th Grade",
-      "sports": ["Soccer"],
-      "academic_year": "2023-2024",
-      "marks": { "Mathematics": 75, "Science": 88, "English": 82,"Environmental Studies": 65,"Social": 55 },
-      "attendance": 95,
-      "disciplinary_actions": "Late submission"
-    },
-    {
-      "username": "student03",
-      "password": "pass03",
-      "full_name": "Charlie Davis",
-      "phone_number": "345-678-9012",
-      "father_name": "Howard Davis",
-      "mother_name": "Emma Davis",
-      "city": "City C",
-      "state": "State C",
-      "pin": "345678",
-      "birth_marks": "Scar on forearm",
-      "grade": "4th Grade",
-      "sports": ["Tennis"],
-      "academic_year": "2023-2024",
-      "marks": { "Mathematics": 90, "Science": 91, "English": 89,"Environmental Studies": 62,"Social": 77 },
-      "attendance": 88,
-      "disciplinary_actions": null
     }
   ]
   

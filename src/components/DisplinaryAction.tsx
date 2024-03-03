@@ -2,8 +2,8 @@ import { useEffect } from "react";
 
 export function DisplinaryAction({ data, role }: any) {
   useEffect(() => {
-    console.log("DISPLINARY ACTION PAGE ONLY ALLOWED FOR ADMIN");
-    if (role !== "admin") {
+    // console.log("DISPLINARY ACTION PAGE ONLY ALLOWED FOR ADMIN");
+    if (role !== "ADMIN") {
       window.location.href = "/unauthorized";
     }
   }, []);
